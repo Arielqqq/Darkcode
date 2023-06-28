@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark/Light Mode Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Dark/Light Mode</h1>
+    <div class="container">
+    <buttton class="toggle-btn">
+        <span class="circle"><i class="icon fas fa-sun"></i></span>
+    </buttton>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quia aliquid eum fugiat quisquam vitae debitis
+        non saepe aperiam in ut voluptatum mollitia explicabo, eaque dolores deserunt nisi pariatur natus ad. Aliquam
+        doloremque, ratione veniam quam, iusto autem laudantium eos recusandae porro nisi fugiat omnis culpa quae et
+        quidem minus harum corrupti eveniet blanditiis similique, temporibus cupiditate! Nemo delectus, distinctio ea
+        ad, mollitia blanditiis architecto quidem ab molestias iure eos itaque inventore earum veritatis. Praesentium
+        incidunt dicta laboriosam iste earum esse et, veritatis, atque totam voluptates rem culpa tempore laborum
+        cupiditate ex accusantium nam aut officiis veniam cum, magnam ipsa? Harum assumenda nostrum autem molestiae
+        ullam iure maiores nulla quibusdam facilis, placeat est porro ut iste amet consectetur, atque suscipit vel
+        accusantium delectus illo soluta expedita. Explicabo earum voluptatum ducimus deleniti deserunt dolorum modi
+        adipisci voluptatibus consectetur ratione ut quod repellat, vero minus? Commodi voluptatibus obcaecati eveniet
+        nesciunt ratione! Facilis voluptatem sapiente, molestias voluptas doloribus, vitae, itaque nesciunt placeat nam
+        animi laborum. Nam, iusto minima ipsa quidem quia praesentium provident modi corrupti incidunt nulla assumenda?
+        Temporibus, numquam tempora. Fugit quod maiores sint dolores facere blanditiis vitae nemo nostrum optio
+        voluptates earum, delectus possimus assumenda exercitationem corporis, reiciendis libero itaque vero. Libero ut
+        cumque error est vero, repellat rerum itaque veritatis velit deleniti commodi. Error explicabo exercitationem
+        porro iste architecto aut. Itaque dolore, ipsa mollitia at tenetur explicabo sapiente. Ipsa eius tenetur ut et
+        rerum dolores, sapiente, quas ipsum nostrum fugiat facilis esse unde placeat! Atque vel repellat illum dolore
+        blanditiis?</p>
+</body>
+
+<script>
+    document.querySelector(".toggle-btn").
+        addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                document.querySelector(".icon").classList.remove('fa-sun');
+                document.querySelector(".icon").classList.add('fa-moon');
+            } else {
+                document.querySelector(".icon").classList.remove
+                    ('fa-moon');
+                document.querySelector(".icon").classList.add
+                    ('fa-sun');
+            }
+        })
+</script>
+
+</html>
