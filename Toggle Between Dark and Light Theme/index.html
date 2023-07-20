@@ -13,11 +13,12 @@
 
 <body>
     <h1>Dark/Light Mode</h1>
-    <div class="container">
-    <buttton class="toggle-btn">
+        <div class="container">
+        <buttton class="toggle-btn">
         <span class="circle"><i class="icon fas fa-sun"></i></span>
-    </buttton>
-    </div>
+        </buttton>
+        </div>
+
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quia aliquid eum fugiat quisquam vitae debitis
         non saepe aperiam in ut voluptatum mollitia explicabo, eaque dolores deserunt nisi pariatur natus ad. Aliquam
         doloremque, ratione veniam quam, iusto autem laudantium eos recusandae porro nisi fugiat omnis culpa quae et
@@ -39,19 +40,7 @@
 </body>
 
 <script>
-    document.querySelector(".toggle-btn").
-        addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            if (document.body.classList.contains('dark-mode')) {
-                document.querySelector(".icon").classList.remove('fa-sun');
-                document.querySelector(".icon").classList.add('fa-moon');
-            } else {
-                document.querySelector(".icon").classList.remove
-                    ('fa-moon');
-                document.querySelector(".icon").classList.add
-                    ('fa-sun');
-            }
-        })
+   
 </script>
 
 </html>
